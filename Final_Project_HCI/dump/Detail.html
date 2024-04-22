@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script src="/dump/script.js"></script>
+<link rel="stylesheet" href="/dump/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+</head>
+<body>
+    <nav>
+        <div id="navcontainer">
+            <div style="height: 10vh;"></div>
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="../foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
+                    <a class="user" href="../dump/login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="../dump/cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="categorycontainer" >
+                <ul id="category" > 
+                    <a href="../dump/section.html"><li>Ladies</li></a>
+                    <a href="#"><li>Man</li></a>
+                    <a href="#"><li>Kids</li></a>
+                    <a href="#"><li>Baby</li></a>
+                    <a href="#" style="color: red;"><li>Sale</li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="space"></section> -->
+
+
+    <section class="maincontainer">
+        <div class="detailcontainer">
+            <div class="leftdetail">
+                <div class="sliderdetail-container">
+                    <div class="sliderdetail">
+                        <img src="../foto/2.png" alt="Image 1">
+                        <img src="../foto/3.png" alt="Image 2">
+                        <img src="../foto/1.png" alt="Image 3">
+                        <!-- <img src="/foto/product5.jpg" alt="Image 4"> -->
+                    </div>
+                    <div class="sliderdetail-pagination"></div>
+                   
+                </div>  
+                <div class="buttondetail">
+                    <button class="prev-btn"><</button>
+                    <button class="next-btn">></button>
+                </div>
+             
+            </div>
+            <div class="rightdetail">
+                <div class="containerright">
+                    <h1>Blazer</h1>
+                    <h2>Rp 350.000</h2>
+                    <div class="containersize">
+                        <div class="sizeguide">
+                            <h3>size</h3>
+                            <a href="#">Size Guide</a>
+                        </div>
+                        <div class="sizedetail">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <button class="cartbutton">Add to cart</button>
+                </div>
+                <div class="containerdetailmaterial">
+                    <div class="detailmaterial">
+                        <h4>Description Fit:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe maiores aperiam, itaque architecto ad. Non vitae, quibusdam eligendi sint at totam autem nobis, aliquid modi deleniti est aperiam consequuntur.</p>
+                    </div>
+                    <div class="detailmaterial">
+                        <h4>Material:</h4>
+                        <p>Silk</p>
+                    </div> <div class="detailmaterial">
+                        <h4>Color:</h4>
+                        <p>Black Swan</p>
+                    </div> <div class="detailmaterial">
+                        <h4>Article Number:</h4>
+                        <p>328902831</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <section class="uploadcontainer">
+        <h1>How others wearing it</h1>
+        <h2>Upload your photo or give us rating and review</h2>
+        <button> upload your photo</button>
+        <div class="photoupload">
+            <div><img src="../foto/starnye.png" alt=""></div>
+            <div><img src="../foto/starnye.png" alt=""></div>
+            <div><img src="../foto/starnye.png" alt=""></div>
+            <div><img src="../foto/starnye.png" alt=""></div>
+            <div><img src="../foto/star.png" alt=""></div>
+        </div>
+        <h5>@user78340</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta omnis ipsa repellendus adipisci velit vero tempora sapiente, enim at eos voluptas consequatur consequuntur cupiditate nesciunt. Aliquid recusandae eveniet repellat odit!</p>
+    </section>
+
+</body>
+</html>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".sliderdetail");
+        const slides = document.querySelectorAll(".sliderdetail img");
+        let currentSlide = 0;
+        const slideInterval = 2000; // Ganti dengan interval yang diinginkan (dalam milidetik)
+        const paginationContainer = document.querySelector('.sliderdetail-pagination');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const buttons = paginationContainer.querySelectorAll('button');
+            buttons.forEach((button, index) => {
+                if (index === currentSlide) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+
+        // setInterval(nextSlide, slideInterval);
+
+        // // Generate pagination buttons
+        // slides.forEach((_, index) => {
+        //     const button = document.createElement('button');
+        //     button.addEventListener('click', () => {
+        //         currentSlide = index;
+        //         updateSlide();
+        //     });
+        //     paginationContainer.appendChild(button);
+        // });
+
+        // Set initial active state
+        updatePagination();
+
+        // Previous button functionality
+        prevButton.addEventListener('click', prevSlide);
+
+        // Next button functionality
+        nextButton.addEventListener('click', nextSlide);
+    });
+    </script>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="/dump/script.js"></script>
+<link rel="stylesheet" href="/dump/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+</head>
+<body>
+    <nav>
+        <div id="navcontainer">
+            <div style="height: 10vh;"></div>
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="../foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
+                    <a class="user" href="../dump/login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="../dump/cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="categorycontainer" >
+                <ul id="category" > 
+                    <a href="../dump/section.html"><li>Ladies</li></a>
+                    <a href="#"><li>Man</li></a>
+                    <a href="#"><li>Kids</li></a>
+                    <a href="#"><li>Baby</li></a>
+                    <a href="#" style="color: red;"><li>Sale</li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="space"></section> -->
+
+    
+    <section class="mainsectioncontainer">
+        <div class="titlesectioncontainer">
+            <h1>Ladies Section</h1>
+            <div class="titlesectionpromo">
+                <h2>PayDay Sale Discount up to 30%</h2>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+       
+        <div class="pictsectioncontaienr">
+            <h4>Career woman</h4>
+            <h1>Keep Your Best Style On Work</h1>
+            <h2>start from Rp. 299.000</h2>
+            <button>Buy Now!</button>
+        </div>
+  
+            <div class="sectioncontainer">
+                <!-- <div class="cardsection">
+                    <img src="/foto//product.jpeg" alt="">
+                    <h1>Y2k Top</h1>
+                    <h2>Rp 450.000</h2>
+                </div> -->
+               
+                </div>
+    
+            </div>
+ 
+      
+    </section>
+
+
+
+    <footer>
+        <div class="footercontainer">
+            <h2>Make Your Style, Make Your Day!</h2>
+            <p>Follow us for more </p>
+            <div class="sosmed">
+                <a href=""><img src="../foto/twitter.png" alt=""></a>
+                <a href=""><img src="../foto/instagram.png" alt=""></a>
+                <a href=""><img src="../foto/pinterest.png" alt=""></a>
+                <a href=""><img src="../foto/facebook.png" alt=""></a>
+            </div>
+            <p> CariAja is a fashion-based company that explores the latest trends and presents a selection of high-quality fashion products.
+                We are proud to offer a wide array of clothing, accessories and shoes from top brands to fulfill yout style needs. Discover 
+                your style with CariAja, the leading fashion destination.
+            </p>
+            <h1>CariAja!</h1>
+        </div>
+        <div class="contact">
+            <a href="#"><img src="../foto/chat.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    
+const sectioncard  =[
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 250.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 300.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 450.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 550.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 650.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 150.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 150.000'
+    },
+    {
+        Image:'../foto/cewek.png',
+        HoverImage: '../foto/cewek-hover.png',
+        heading:'Y2K Top',
+        price:'Rp. 150.000'
+    }
+]
+const postsectioncontainer = document.querySelector('.sectioncontainer');
+
+const postmethodssection = () => {
+    sectioncard.map((postdatasection) => {
+        const postelementsection = document.createElement('div');
+        postelementsection.classList.add('cardsection');
+        postelementsection.innerHTML = `
+            <div class="cardsection">
+                <img src="${postdatasection.Image}" data-hover="${postdatasection.HoverImage}" alt="">
+                <h1>${postdatasection.heading}</h1>
+                <h2>${postdatasection.price}</h2>
+            </div>`;
+        postsectioncontainer.appendChild(postelementsection);
+    });
+}
+
+postmethodssection();
+
+// Menambahkan event listener untuk setiap elemen dengan class 'cardsection'
+const cardSections = document.querySelectorAll('.cardsection');
+cardSections.forEach((card) => {
+    const img = card.querySelector('img');
+    const originalImage = img.getAttribute('src'); // Simpan gambar asli
+    const hoverImage = img.getAttribute('data-hover'); // Simpan gambar hover
+    img.addEventListener('mouseenter', () => {
+        img.setAttribute('src', hoverImage); // Saat hover, ganti gambar dengan gambar hover
+    });
+    img.addEventListener('mouseleave', () => {
+        img.setAttribute('src', originalImage); // Saat kursor keluar, kembalikan gambar ke gambar asli
+    });
+});
+</script>
+</html>
