@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="/dump/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+   <nav>
+        <div id="navcontainerlogres">
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="/foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="/foto/search.png" alt=""></button>
+                    <a class="user" href=""> <img src="/foto/user.png" alt=""></a>
+                    <a class="basket" href=""> <img src="/foto/basket.png" alt=""></a>
+               
+                </div>
+               
+                
+            </div>
+
+        </div>
+    </nav>
+    <!-- <section class="spacelog"></section> -->
+
+
+
+
+
+
+
+
+    <section class="login">
+        <div class="logincontainer">
+            <div class="logintitle">Log in</div>
+            <form class="logininput" > 
+                <div class="inputtemplate">
+                    <p>Email :</p>
+                    <input type="text" name="" id="emailreg">
+                    <p id="errorregmail"   style="display: none;">*please enter a valid email address</p>
+                </div>
+
+          
+                <div class="inputtemplate">
+                    <p>Password :</p>
+                    <input type="text" name="" id="passwordnye">
+                    <p id="errorpass" style="display: none;" >*password incorect</p>
+                </div>
+                <a href="" class="forgotpass">Forget Password?</a>
+                <div class="butlog">
+                    <button>Log in</button>
+                </div>
+                
+                <div class="or">
+                    <div class="orline"></div>
+                    <div>or</div>
+                    <div class="orline"></div>
+                </div>
+
+                <div class="signinbutton">
+                    <button><img src="/foto/google.png" alt="">Sign in with Google <div></div></button>
+                </div>
+                <div class="registerlink">
+                    <h3 >Don't have an account? </h3>
+                     <a href="">Register</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footercontainer">
+            <h2>Make Your Style, Make Your Day!</h2>
+            <p>Follow us for more </p>
+            <div class="sosmed">
+                <a href=""><img src="/foto/twitter.png" alt=""></a>
+                <a href=""><img src="/foto/instagram.png" alt=""></a>
+                <a href=""><img src="/foto/pinterest.png" alt=""></a>
+                <a href=""><img src="/foto/facebook.png" alt=""></a>
+            </div>
+            <p> CariAja is a fashion-based company that explores the latest trends and presents a selection of high-quality fashion products.
+                We are proud to offer a wide array of clothing, accessories and shoes from top brands to fulfill yout style needs. Discover 
+                your style with CariAja, the leading fashion destination.
+            </p>
+            <h1>CariAja!</h1>
+        </div>
+   
+    </footer>
+
+    <script >
+        
+
+
+
+
+
+function validateEmail(email) {
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+
+function handleInputChange() {
+    var emailInput = document.getElementById("emailreg");
+    var errorElement = document.getElementById("errorregmail");
+
+
+    if (validateEmail(emailInput.value)) {
+
+        errorElement.style.display = "none";
+    } else {
+   
+        errorElement.style.display = "block";
+    }
+}
+
+
+document.getElementById("emailreg").addEventListener("input", handleInputChange);
+
+
+function validatePassword(password) {
+
+    return password.length >= 8;
+}
+
+
+function handlePasswordChange() {
+    var passwordInput = document.getElementById("passwordreg");
+    var errorElement = document.getElementById("errorregpass");
+
+   
+    if (validatePassword(passwordInput.value)) {
+  
+        errorElement.style.display = "none";
+    } else {
+  
+        errorElement.style.display = "block";
+    }
+}
+
+document.getElementById("passwordreg").addEventListener("input", handlePasswordChange);
+
+function validatePhoneNumber(phoneNumber) {
+
+    var regex = /^[0-9]+$/;
+    return regex.test(phoneNumber);
+}
+
+
+function handlePhoneChange() {
+    var phoneInput = document.getElementById("phonereg");
+    var errorElement = document.getElementById("errorphone");
+
+ 
+    if (validatePhoneNumber(phoneInput.value)) {
+ 
+        errorElement.style.display = "none";
+    } else {
+        
+        errorElement.style.display = "block";
+    }
+}
+
+document.getElementById("phonereg").addEventListener("input", handlePhoneChange);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dobInput = document.getElementById('dobInput');
+    
+    dobInput.addEventListener('click', function() {
+        dobInput.type = 'date';
+    });
+}); 
+    </script>
+</body>
+</html>

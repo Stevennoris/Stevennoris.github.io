@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="/dump/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <div id="navcontainer">
+            <div style="height: 10vh;"></div>
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="../foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
+                    <a class="user" href="../dump/login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="../dump/cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="categorycontainer" >
+                <ul id="category" > 
+                    <a href="../dump/section.html"><li>Ladies</li></a>
+                    <a href="#"><li>Man</li></a>
+                    <a href="#"><li>Kids</li></a>
+                    <a href="#"><li>Baby</li></a>
+                    <a href="#" style="color: red;"><li>Sale</li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="space"></section> -->
+    <section class="cart"> 
+        <div class="cartcontainertitle">
+            <h1>Shopping Cart</h1>
+        </div>
+
+        <div class="cartcontainermain" >
+            <div class="productabiezzz"  >
+                <div class="productcontainer">
+
+
+
+                    <!-- <div class="productarray">
+                        <div class="productdiv">
+                            <div class="pictcartcontainer">
+                                <img src="/foto/product.jpeg" alt="">
+                            </div>
+                            <div class="productmaincontainer">
+                                <div class="producttitle">
+                                    <h1>Blazer</h1>
+                                    <h2>Rp. 350.000</h2>
+                                </div>
+                                <div class="productmain">
+                                    <div class="leftproduct">
+                                        <div class="item">
+                                            <h4>Item no :</h4>
+                                            <p>37812032</p>
+                                        </div>
+                                        <div class="size">
+                                            <h4>Size :</h4>
+                                            <p>L</p>
+                                        </div>
+                                    </div>
+                                    <div class="color">
+                                        <h4>Color :</h4>
+                                        <p>Black</p>
+                                    </div>
+                                </div>
+                                <div class="productquantity">
+                                    <h4>Quantity :</h4>
+                                    <input type="number" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                    </div> -->
+                    
+                
+                </div>
+
+                <button id="showAllButton">Show All Products</button>
+            </div>
+         
+
+            <div class="paymentcontainer">
+                <div class="paymentmain">
+                    <div class="listdata">
+                        <h4>Account:</h4>
+                        <input type="text" value="example@gmail.com">
+                    </div>
+                    <div class="listdata">
+                        <h4>Address:</h4>
+                        <input type="text">
+                    </div>
+                    <div class="listdata">
+                        <h4>Shipping Methods:</h4>
+                        <input type="text" value="JNE">
+                    </div>
+                    <div class="listdata">
+                        <h4>Billing Address:</h4>
+                        <input type="text">
+                    </div>
+                    <div class="checklist" >
+                        <input type="checkbox">
+                        <p>Email me news and offers</p>
+                    </div>
+                </div>
+
+                <div class="paymenttotalcontainer">
+                    <div class="paymenttotal">
+                        <div class="listtotal">
+                            <h4>Sub Total</h4>
+                            <p>Rp 350.000</p>
+                        </div>
+                        <div class="listtotal">
+                            <h4>Tax</h4>
+                            <p>Rp 35.000</p>
+                        </div>
+                        <div class="listtotal">
+                            <h4>Delivery Fee</h4>
+                            <p>Rp 50.000</p>
+                        </div>
+                    </div>
+                    <div class="totalalllist">
+                        <h4>Total</h4>
+                        <p>Rp 435.000</p>
+                    </div>
+                </div>
+              
+
+                <button>Continue to Payment</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <script src="script.js"></script>
+
+
+    <section class="spacecart"></section>
+
+
+
+    <footer>
+        <div class="footercontainer">
+            <h2>Make Your Style, Make Your Day!</h2>
+            <p>Follow us for more </p>
+            <div class="sosmed">
+                <a href=""><img src="../foto/twitter.png" alt=""></a>
+                <a href=""><img src="../foto/instagram.png" alt=""></a>
+                <a href=""><img src="../foto/pinterest.png" alt=""></a>
+                <a href=""><img src="../foto/facebook.png" alt=""></a>
+            </div>
+            <p> CariAja is a fashion-based company that explores the latest trends and presents a selection of high-quality fashion products.
+                We are proud to offer a wide array of clothing, accessories and shoes from top brands to fulfill yout style needs. Discover 
+                your style with CariAja, the leading fashion destination.
+            </p>
+            <h1>CariAja!</h1>
+        </div>
+        <div class="contact">
+            <a href="#"><img src="../foto/chat.png" alt=""></a>
+        </div>
+    </footer>
+
+<script>
+    const cardnye = [
+    {
+        heading: 'Jacket',
+        price: '550.000',
+        item: '3719820312',
+        size: 'XL',
+        color: 'white',
+        quantity: '1'
+    }, 
+    {
+        heading: 'Pants',
+        price: 'Rp.150.000',
+        item: '3213879023',
+        size: 'L',
+        color: 'green',
+        quantity: '3'
+    },
+    {
+        heading: 'Shirt',
+        price: 'Rp.450.000',
+        item: '2138129',
+        size: 'L',
+        color: 'yellow',
+        quantity: '2'
+    },
+];
+
+    const postcontainer = document.querySelector('.productcontainer');
+
+let showall = false;
+
+const postmethod = () => {
+    cardnye.slice(0,1).map((postdata) => {
+        const postelement = document.createElement('div');
+        postelement.classList.add('productarray');
+        postelement.innerHTML = `
+            <div class="productdiv">
+                <div class="pictcartcontainer">
+                    <img src="../foto/product.jpeg" alt="">
+                </div>
+                <div class="productmaincontainer">
+                    <div class="producttitle">
+                        <h1>${postdata.heading}</h1>
+                        <h2>Rp. ${postdata.price}</h2>
+                    </div>
+                    <div class="productmain">
+                        <div class="leftproduct">
+                            <div class="item">
+                                <h4>Item no : </h4>
+                                <p>${postdata.item}</p>
+                            </div>
+                            <div class="size">
+                                <h4>Size : </h4>
+                                <p>${postdata.size}</p>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <h4>Color : </h4>
+                            <p>${postdata.color}</p>
+                        </div>
+                    </div>
+                    <div class="productquantity">
+                        <h4>Quantity : </h4>
+                        <input type="number" value="${postdata.quantity}">
+                    </div>
+                </div>
+            </div>
+        `;
+        postcontainer.appendChild(postelement);
+    });
+    
+}
+postmethod();
+
+
+const showallbutton = document.getElementById('showAllButton');
+
+showallbutton.addEventListener('click', () => {
+    showall = !showall;
+
+    postcontainer.innerHTML = '';
+
+    if (showall) {
+        cardnye.map((postdata) => {
+            const postelement = document.createElement('div');
+            postelement.classList.add('productarray');
+            postelement.innerHTML = `
+                <div class="productdiv">
+                    <div class="pictcartcontainer">
+                        <img src="../foto/product.jpeg" alt="">
+                    </div>
+                    <div class="productmaincontainer">
+                        <div class="producttitle">
+                            <h1>${postdata.heading}</h1>
+                            <h2>Rp. ${postdata.price}</h2>
+                        </div>
+                        <div class="productmain">
+                            <div class="leftproduct">
+                                <div class="item">
+                                    <h4>Item no :</h4>
+                                    <p>${postdata.item}</p>
+                                </div>
+                                <div class="size">
+                                    <h4>Size :</h4>
+                                    <p>${postdata.size}</p>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <h4>Color :</h4>
+                                <p>${postdata.color}</p>
+                            </div>
+                        </div>
+                        <div class="productquantity">
+                            <h4>Quantity :</h4>
+                            <input type="number" value="${postdata.quantity}">
+                        </div>
+                    </div>
+                </div>
+            `;
+            postcontainer.appendChild(postelement);
+        });
+        showallbutton.textContent = "Show One Product";
+    } else {
+        postmethod();
+        showallbutton.textContent = "Show All Products";
+    }
+});
+</script>
+</body>
+</html>
