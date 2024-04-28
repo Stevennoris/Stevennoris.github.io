@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+  
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+</head>
+<body>
+    <nav>
+        <div id="navcontainer">
+            <div style="height: 10vh;"></div>
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="../foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
+                    <a class="user" href="/login/login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="/cart/cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="categorycontainer" >
+                <ul id="category" > 
+                    <a id="ladies" href="/section/section.html?category=ladies"><li>Ladies</li></a>
+                    <a id="man" href="/section/section.html?category=man"><li>Man</li></a>
+                    <a id="kids" href="/section/section.html?category=kids"><li>Kids</li></a>
+                    <a id="baby" href="/section/section.html?category=baby"><li>Baby</li></a>
+                    <a id="sale" href="/section/section.html?category=sale" style="color: red;"><li>Sale</li></a>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <section class="mainsectioncontainer">
+        <div class="titlesectioncontainer">
+            <h1 id="sectionTitle"></h1>
+            <div class="titlesectionpromo">
+                <h2 id="sectionSubtitle"></h2>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+       
+        <div class="pictsectioncontaienr" id="pictsectioncontaienr" >
+            <h4 id="sectionHeader"></h4>
+            <h1>Keep Your Best Style On Work</h1>
+            <h2 id="sectionPrice"></h2>
+            <button>Buy Now!</button>
+        </div>
+  
+        <div id="products" class="sectioncontainer"></div>
+    </section>
+
+
+  
+   
+    <script src="section.js">
+     
+    </script>
+</body>
+</html>

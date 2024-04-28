@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="dump/style.css">
+<link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
@@ -30,19 +30,19 @@
                     </div>
                     
                     <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
-                    <a class="user" href="login.html"> <img src="../foto/user.png" alt=""></a>
-                    <a class="basket" href="cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <a class="user" href="/login/login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="/cart/cart.html"> <img src="../foto/basket.png" alt=""></a>
                     <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
                 </div>
             </div>
 
             <div id="categorycontainer" >
                 <ul id="category" > 
-                    <a href="section.html"><li>Ladies</li></a>
-                    <a href="#"><li>Man</li></a>
-                    <a href="#"><li>Kids</li></a>
-                    <a href="#"><li>Baby</li></a>
-                    <a href="#" style="color: red;"><li>Sale</li></a>
+                    <a id="ladies" href="/section/section.html?category=ladies"><li>Ladies</li></a>
+                    <a id="man" href="/section/section.html?category=man"><li>Man</li></a>
+                    <a id="kids" href="/section/section.html?category=kids"><li>Kids</li></a>
+                    <a id="baby" href="/section/section.html?category=baby"><li>Baby</li></a>
+                    <a id="sale" href="/section/section.html?category=sale" style="color: red;"><li>Sale</li></a>
                 </ul>
             </div>
         </div>
@@ -120,7 +120,7 @@
         </div>
 
         <div class="hotproductlist">
-            <!-- <div class="hotproductarray">
+       <!-- <div class="hotproductarray">
                 <h1>Jacket Bli</h1>
                 <h2>Rp. 250.000</h2>
             </div> -->
@@ -153,8 +153,28 @@
     </footer>
 
 </body> 
-<script src="/dump/script.js">
-    
-</script>
 
+<script src="script.js">
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </html>

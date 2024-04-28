@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Junge&display=swap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <nav>
+        <div id="navcontainer">
+            <div style="height: 10vh;"></div>
+            <div class="iconsearchcontainer">
+                <h1>CariAja!</h1>
+                <div class="iconsearch">
+                    <div class="searchbutton">
+                        <div id="searchnav">
+                            <img src="../foto/search.png" alt="">
+                            <input type="text" autocomplete="off">
+                            <button onclick="clickfunc()"  >X</button>
+                        </div>
+                        <button>search</button>
+                    </div>
+                    
+                    <button class="searchcon" onclick="clickfunc()"><img src="../foto/search.png" alt=""></button>
+                    <a class="user" href="login.html"> <img src="../foto/user.png" alt=""></a>
+                    <a class="basket" href="/cart/cart.html"> <img src="../foto/basket.png" alt=""></a>
+                    <button class="line" onclick="ddfunc()"><img src="../foto/menu.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="categorycontainer" >
+                <ul id="category" > 
+                  <a id="ladies" href="/section/section.html?category=ladies"><li>Ladies</li></a>
+                    <a id="man" href="/section/section.html?category=man"><li>Man</li></a>
+                    <a id="kids" href="/section/section.html?category=kids"><li>Kids</li></a>
+                    <a id="baby" href="/section/section.html?category=baby"><li>Baby</li></a>
+                    <a id="sale" href="/section/section.html?category=sale" style="color: red;"><li>Sale</li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="space"></section> -->
+
+
+    <section class="maincontainer">
+        <div class="detailcontainer">
+            <div class="leftdetail">
+                <div class="sliderdetail-container">
+                    <div class="sliderdetail">
+                        <img src="../foto/2.png" alt="Image 1">
+                        <img src="../foto/3.png" alt="Image 2">
+                        <img src="../foto/1.png" alt="Image 3">
+                        <!-- <img src="/foto/product5.jpg" alt="Image 4"> -->
+                    </div>
+                    <div class="sliderdetail-pagination"></div>
+                   
+                </div>  
+                <div class="buttondetail">
+                    <button class="prev-btn"><</button>
+                    <button class="next-btn">></button>
+                </div>
+             
+            </div>
+            <div id="productDetail" class="rightdetail">
+              
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="uploadcontainer">
+        <h1>How others wearing it</h1>
+        <h2>Upload your photo or give us rating and review</h2>
+        <button> upload your photo</button>
+        <div class="photouploadcontainer" style="display: flex; gap: 20px;">
+            <div class="photoupload">
+                <div><img src="../foto/starnye.png" alt=""></div>
+                <div><img src="../foto/starnye.png" alt=""></div>
+                <div><img src="../foto/starnye.png" alt=""></div>
+                <div><img src="../foto/starnye.png" alt=""></div>
+                <div><img src="../foto/star.png" alt=""></div>
+            </div>
+            <div class="photouploadmore" >
+                <h1>+10</h1>
+            </div>
+        </div>
+
+        <h5>@user78340</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta omnis ipsa repellendus adipisci velit vero tempora sapiente, enim at eos voluptas consequatur consequuntur cupiditate nesciunt. Aliquid recusandae eveniet repellat odit!</p>
+    </section>
+
+    
+
+</body>
+</html>
+
+
+<!-- <script src="detail.js"></script> -->
+<script src="detail.js" >
+   
+    
+    </script>
