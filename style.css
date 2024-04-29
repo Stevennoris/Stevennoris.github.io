@@ -45,7 +45,10 @@
     justify-content: center;
     z-index: 1000;
 }
-
+.iconsearchcontainer  a{
+    text-decoration: none;
+    color: black;
+}
 .iconsearchcontainer h1{
     font-size: 30px;
     width: 20vw;
