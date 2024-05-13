@@ -839,7 +839,7 @@ footer{
 .sliderdetail-container {
     position: relative;
     width: 28vw;
-    height: 70vh;
+    height: 65vh;
     overflow: hidden;
     /* background-color: aquamarine; */
 
@@ -858,7 +858,7 @@ footer{
 
 .sliderdetail img {
     width: 100%;
-    height: 70vh;
+    height: 65vh;
 }
 
 .sliderdetail-pagination {
