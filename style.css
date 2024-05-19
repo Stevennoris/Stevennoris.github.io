@@ -192,9 +192,12 @@
 
 #category a{
     text-decoration: none;
-    color: black;
+    color: gray;
 }
 
+#category a:hover{
+    color: black;
+}
 .space{
     width: 100%;
     height: 10vh;
@@ -241,8 +244,8 @@ footer{
 }
 
 .footercontainer h2{
-    font-size: 2.5vw;
-    font-family: 'Ligconsolata', monospace;
+    font-size: 2.2vw;
+    
 }
 
 .footercontainer p{
@@ -301,6 +304,39 @@ footer{
 /* ================================================================================================================================================ */
                                                                 /* login */
 /* ================================================================================================================================================ */
+.close{
+    /* background-color: aqua; */
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    font-size: 35px;
+    font-family: 'roboto', sans-serif;
+ 
+}
+.close a{
+    color: black;
+    text-decoration: none;
+}
+.notification {
+    position: fixed;
+    top: 57vh;
+    left: 29.5vw;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 9999;
+    font-family: 'Junge', sans-serif;
+}
+
+.success {
+    color: #4CAF50;
+}
+
+.error {
+    color: #f44336; 
+}
 
 .login{
     height: 90vh;
@@ -308,6 +344,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center; 
+    flex-direction: column;
 }
 
 .logincontainer{
@@ -318,7 +355,7 @@ footer{
 
 .logintitle{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     /* background-color:chocolate; */
     display: flex;
     align-items: center;
@@ -357,6 +394,7 @@ footer{
     background-color: #D9D9D9;
     text-decoration: none;
     border: 1px rgba(0, 0, 0, 0.1) solid;
+    padding: 0 10px;
 }
 
 
@@ -481,6 +519,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center; 
+    flex-direction: column;
 }
 
 .registercontainer{
@@ -491,7 +530,7 @@ footer{
 
 .registertitle{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     /* background-color:chocolate; */
     display: flex;
     align-items: center;
@@ -537,6 +576,20 @@ footer{
 /* ================================================================================================================================================ */
                                                             /* Cart */
 /* ================================================================================================================================================ */
+.notifcart{
+ 
+        position: fixed;
+        top: 60px;
+        right: 40px;
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    
+    
+}
 .cart{
     display: flex;
     flex-direction: column;
@@ -816,6 +869,18 @@ footer{
     font-style: normal;
 }
 
+.linedetail{
+    width: 100%;
+    height:3px;
+    display: flex;
+    justify-content: center;
+}
+
+.linedetail div{
+    width: 97%;
+    height: 100%;
+    background-color: black;
+}
 .maincontainer{
     width: 100%;
     display: flex;
@@ -838,8 +903,8 @@ footer{
 
 .sliderdetail-container {
     position: relative;
-    width: 28vw;
-    height: 65vh;
+    width: 380px;
+    height: 70vh;
     overflow: hidden;
     /* background-color: aquamarine; */
 
@@ -858,7 +923,7 @@ footer{
 
 .sliderdetail img {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
 }
 
 .sliderdetail-pagination {
@@ -883,7 +948,7 @@ footer{
 
 .buttondetail{
     /* background-color: aqua; */
-    width: 28vw;
+    width: 380px;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -1082,6 +1147,9 @@ footer{
   #products a{
     text-decoration: none;
     color: black;
+}
+.cardsection img {
+    transition: opacity 0.3s ease; 
 }
 .mainsectioncontainer{
     width: 100%;
@@ -1414,6 +1482,10 @@ height: 80%;
     height: 5%;
     font-size: 15px;
    }
+   .productpictcontainer a{
+    text-decoration: none;
+    color: black;
+   }
    .productpictcontainer p{
     color: white;
     padding-bottom: 15px;
@@ -1530,6 +1602,10 @@ height: 80%;
 
         height: 75vh;
 
+    }
+
+    .pictsectioncontaienr{
+        width: 100%;
     }
 
  
@@ -1675,7 +1751,7 @@ height: 80%;
     
     .sliderdetail-container {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: 65vh;
     }
 
@@ -1692,7 +1768,7 @@ height: 80%;
     
     
     .buttondetail{
-        width: 100%;
+        width: 350px;
         padding: 0 10px;
         bottom: 50%;
         height: 0px;
@@ -1808,7 +1884,7 @@ height: 80%;
         
         .sliderdetail-container {
             position: relative;
-            width: 100%;
+            width: 340px;
             height: 63vh;
         }
     
@@ -1825,7 +1901,8 @@ height: 80%;
         
         
         .buttondetail{
-            width: 100%;
+           
+            width: 340px;
             padding: 0 10px;
             bottom: 50%;
             height: 0px;
@@ -1893,7 +1970,6 @@ height: 80%;
         /* background-color: cornflowerblue; */
     }
  
-
     .sectioncontainer{
         width: 88.5%;
         display: flex;
@@ -2117,7 +2193,7 @@ height: 80%;
     
     .sliderdetail-container {
         position: relative;
-        width: 100%;
+        width: 320px;
         height: 60vh;
     }
 
@@ -2134,7 +2210,7 @@ height: 80%;
     
     
     .buttondetail{
-        width: 100%;
+        width: 320px;
         padding: 0 10px;
         bottom: 50%;
         height: 0px;
@@ -2253,7 +2329,7 @@ height: 80%;
     
     .sliderdetail-container {
         position: relative;
-        width: 100%;
+        width: 300px;
         height: 55vh;
     }
 
@@ -2270,7 +2346,7 @@ height: 80%;
     
     
     .buttondetail{
-        width: 100%;
+        width: 300px;
         padding: 0 10px;
         bottom: 50%;
         height: 0px;
@@ -2468,8 +2544,8 @@ height: 80%;
     
     .sliderdetail-container {
         position: relative;
-        width: 100%;
-        height: 55vh;
+        width: 300px;
+        height: 50vh;
     }
 
     
@@ -2485,7 +2561,7 @@ height: 80%;
     
     
     .buttondetail{
-        width: 100%;
+        width: 300px;
         padding: 0 10px;
         bottom: 50%;
         height: 0px;
