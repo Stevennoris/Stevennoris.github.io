@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="productquantity">
                             <h4>Quantity :</h4>
                             <input type="number" value="${item.quantity || 1}"> <!-- Set default value to 1 -->
-                            <button class="resetQuantity">Reset</button> <!-- Add reset button -->
+                            <button class="resetQuantity">Delete</button> <!-- Add reset button -->
                         </div>
                     </div>
                 </div>
