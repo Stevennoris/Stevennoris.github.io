@@ -522,9 +522,24 @@ function addToCart(product) {
         cartItems.push(product);
 
         localStorage.setItem('cart', JSON.stringify(cartItems));
+        showNotification("Produk telah ditambahkan ke keranjang!");
     }
 
 
+    function showNotification(message) {
+        // Buat elemen notifikasi
+        const notification = document.createElement('div');
+        notification.classList.add('notifcart'); // Menggunakan kelas 'notifcart'
+        notification.textContent = message;
+    
+        // Tambahkan notifikasi ke dalam body
+        document.body.appendChild(notification);
+    
+        // Hapus notifikasi setelah beberapa detik
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 10000); // Notifikasi akan hilang setelah 10 detik (10000 milidetik)
+    }
     
 document.addEventListener('DOMContentLoaded', function() {
  
