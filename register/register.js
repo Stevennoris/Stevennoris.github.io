@@ -75,9 +75,13 @@ document.querySelector('.registerinput').addEventListener('submit', function(eve
     }
 
     // Menghentikan pengiriman formulir jika tidak valid
-    if (!isValid) {
+    if (isValid) {
+        document.getElementById('loginSuccessMessage').style.display = 'block';
+        window.location.href = '/index.html';
+    } else {
         event.preventDefault();
     }
+
 });
 
 
