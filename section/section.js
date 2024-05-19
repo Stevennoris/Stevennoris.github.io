@@ -337,7 +337,7 @@ switch (category) {
         sectionHeader.textContent = 'Elevate Your Look';
         sectionPrice.textContent = 'Start from Rp. 250.000';
         document.getElementById('man').style.textDecoration = 'underline';
-  
+        document.getElementById('man').style.color='black';
         sectionimg.style.backgroundImage = "url('../foto/man/poster.png')";
         break;
     case 'ladies':
@@ -347,7 +347,7 @@ switch (category) {
         sectionPrice.textContent = 'Start from Rp. 150.000';
         sectionimg.style.backgroundImage= '';
         
-   
+        document.getElementById('ladies').style.color='black';
         document.getElementById('ladies').style.textDecoration = 'underline';
         break;
     case 'kids':
@@ -357,7 +357,7 @@ switch (category) {
         sectionPrice.textContent = 'Start from Rp. 100.000';
         sectionimg.style.backgroundImage= '';
         
-
+        document.getElementById('kids').style.color='black';
         document.getElementById('kids').style.textDecoration = 'underline';
         sectionimg.style.backgroundImage = "url('../foto/kids/kids_banner.png')";
         break;
@@ -368,7 +368,7 @@ switch (category) {
         sectionPrice.textContent = 'Start from Rp. 75.000';
         sectionimg.style.backgroundImage= '';
         
-     
+        document.getElementById('baby').style.color='black';
         document.getElementById('baby').style.textDecoration = 'underline';
         sectionimg.style.backgroundImage = "url('../foto/baby/baby_banner.png')";
         break;
@@ -379,7 +379,7 @@ switch (category) {
         sectionPrice.textContent = 'Start from Rp. 50.000';
         sectionimg.style.backgroundImage= '';
         
-     
+        document.getElementById('sale').style.color='black';
         document.getElementById('sale').style.textDecoration = 'underline';
         sectionimg.style.backgroundImage = "url('../foto/sale/sale_banner.png')";
         break;
@@ -404,4 +404,15 @@ img.addEventListener('mouseenter', () => {
 img.addEventListener('mouseleave', () => {
     img.setAttribute('src', originalImage); 
 });
+});
+
+
+
+
+document.querySelector('#drop').addEventListener("click", () => {
+    window.scrollTo({
+        top: 778,
+        left: 0,
+        behavior: 'smooth' 
+    });
 });
